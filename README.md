@@ -85,22 +85,6 @@ npm run lint
 ```
 Runs ESLint to check for code quality and consistency
 
-## 🏗️ Project Structure
-
-```
-src/
-├── components/           # Reusable React components
-│   ├── Header.tsx       # Navigation header with mobile menu
-│   ├── Hero.tsx         # Hero section with CTA and appointment form
-│   ├── FeatureCards.tsx # Service feature cards
-│   ├── Testimonials.tsx # Patient testimonials carousel
-│   ├── Contact.tsx      # Contact form and information
-│   └── Footer.tsx       # Site footer with links and info
-├── App.tsx              # Main application component
-├── main.tsx             # Application entry point
-├── index.css            # Global styles and Tailwind imports
-└── vite-env.d.ts        # Vite type definitions
-```
 
 ## 🎯 Key Components
 
