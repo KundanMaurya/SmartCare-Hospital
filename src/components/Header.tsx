@@ -4,10 +4,11 @@ import { Menu, X, Heart, Phone, MapPin } from 'lucide-react';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 5);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
   return (
     <>
       {/* Top bar */}
-      <div className="bg-blue-900 text-white py-2 px-4 text-sm">
+      <div className="fixed bg-blue-900 text-white py-2 px-4 text-sm">
         <div className="container-max flex justify-between items-center">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
